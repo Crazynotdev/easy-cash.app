@@ -1,0 +1,41 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-native",
+    "lib": ["es2019", "dom"],
+    "target": "es2019",
+    "module": "commonjs",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["srx/*"],
+      "@components/*": ["srx/components/*"],
+      "@screens/*": ["srx/screens/*"],
+      "@services/*": ["srx/services/*"],
+      "@hooks/*": ["srx/hooks/*"],
+      "@context/*": ["srx/context/*"],
+      "@utils/*": ["srx/utils/*"],
+      "@types/*": ["srx/types/*"],
+      "@config/*": ["srx/config/*"],
+      "@navigation/*": ["srx/navigation/*"],
+      "@assets/*": ["assets/*"]
+    }
+  },
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules", "babel.config.js", "metro.config.js", "jest.config.js"]
+}
